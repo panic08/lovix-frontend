@@ -1,0 +1,404 @@
+body{
+margin: 0;
+}
+@font-face {
+    font-family: 'Rubik Light';
+    src: local('Rubik Light'), local('Rubik-Light'), url('./fonts/Rubiklight.woff2') format('woff2'), url('./fonts/Rubiklight.woff') format('woff'), url('./fonts/Rubiklight.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Rubik Light Italic';
+    src: local('Rubik Light Italic'), local('Rubik-LightItalic'), url('./fonts/Rubiklightitalic.woff2') format('woff2'), url('./fonts/Rubiklightitalic.woff') format('woff'), url('./fonts/Rubiklightitalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Rubik Regular';
+    src: local('Rubik'), local('Rubik-Regular'), url('./fonts/Rubik.woff2') format('woff2'), url('./fonts/Rubik.woff') format('woff'), url('./fonts/Rubik.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Rubik Regular Italic';
+    src: local('./fonts/Rubik Italic'), local('Rubik-Italic'), url('./fonts/Rubikitalic.woff2') format('woff2'), url('./fonts/Rubikitalic.woff') format('woff'), url('./fonts/Rubikitalic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Rubik Medium';
+    src: local('Rubik Medium'), local('Rubik-Medium'), url('./fonts/Rubikmedium.woff2') format('woff2'), url('./fonts/Rubikmedium.woff') format('woff'), url('./fonts/Rubikmedium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Rubik Medium Italic';
+    src: local('Rubik Medium Italic'), local('Rubik-MediumItalic'), url('./fonts/Rubikmediumitalic.woff2') format('woff2'), url('./fonts/Rubikmediumitalic.woff') format('woff'), url('./fonts/Rubikmediumitalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Rubik Bold';
+    src: local('Rubik Bold'), local('Rubik-Bold'), url('./fonts/Rubikbold.woff2') format('woff2'), url('./fonts/Rubikbold.woff') format('woff'), url('./fonts/Rubikbold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Rubik Bold Italic';
+    src: local('Rubik Bold Italic'), local('Rubik-BoldItalic'), url('./fonts/Rubikbolditalic.woff2') format('woff2'), url('./fonts/Rubikbolditalic.woff') format('woff'), url('./fonts/Rubikbolditalic.ttf') format('truetype');
+    font-weight: 700;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Rubik Black';
+    src: local('Rubik Black'), local('Rubik-Black'), url('./fonts/Rubikblack.woff2') format('woff2'), url('./fonts/Rubikblack.woff') format('woff'), url('./fonts/Rubikblack.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Rubik Black Italic';
+    src: local('Rubik Black Italic'), local('Rubik-BlackItalic'), url('./fonts/Rubikblackitalic.woff2') format('woff2'), url('./fonts/Rubikblackitalic.woff') format('woff'), url('./fonts/Rubikblackitalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+body{
+    background-color: #20242d;
+}
+nav{
+    height: 74px;
+
+    background-color: #20242d;
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.nav__wrapper{
+}
+.nav__container{
+    height: 60px;
+    display: block;
+    justify-content: center;
+    padding: 12px 15px;
+
+
+
+}
+nav hr{
+    background-color: rgba(116, 129, 152, 0.15);
+    height: 0.1px;
+    position: fixed;
+    top: 57px;
+    right: 0;
+    left: 0;
+    bottom: 0px;
+}
+.nav__text{
+    color: honeydew;
+    moz-user-select: none; -khtml-user-select: none; user-select: none;
+    transition: 0.3s;
+    cursor: pointer;
+    float: left;
+    font-family: "Calibri";
+    font-size: 34px;
+    text-decoration: none;
+    display: inline-block;
+
+
+}
+.nav__text:hover{
+    transition: 0.4s;
+    opacity: 0.79;
+}
+.nav__buttons{
+
+    moz-user-select: none; -khtml-user-select: none; user-select: none;
+    display: inline-block;
+    padding: 12px 0px;
+
+    margin: 4px 10px;
+    font-family: "Rubik Regular";
+    font-size: 15px;
+
+}
+.nav__buttons_text{
+    color: #748198;
+    padding: 8px 10px;
+    transition: 0.3s;
+    moz-user-select: none; -khtml-user-select: none; user-select: none;
+}
+.nav__buttons_text:hover{
+    color: white;
+    transition: 0.3s;
+    background-color: #242932;
+    border-radius: 5px;
+    padding: 5px 10px;
+
+
+    text-decoration: none;
+}
+.nav__buttons_text_active{
+    color: white;
+    transition: 0.3s;
+    background-color: #242932;
+    border-radius: 5px;
+    padding: 5px 0px;
+    cursor: default;
+
+
+    text-decoration: none;
+}
+
+
+.nav__other{
+    display: inline-flex;
+    float: right;
+    moz-user-select: none; -khtml-user-select: none; user-select: none;
+
+
+
+    margin: 6px 5px;
+}
+
+.nav__other2{
+    display: inline-flex;
+    float: right;
+
+
+
+
+    margin: 6px 5px;
+}
+
+.nav__other3{
+    display: inline-flex;
+    float: right;
+
+
+
+
+    margin: 6px 5px;
+}
+.nav__other__img {
+
+    width: 13px;
+    height: 13px;
+    display: inline-flex;
+
+}
+nav img{
+
+}
+img{
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    pointer-events: none;
+}
+.mayday{
+    justify-content: center;
+margin: -15px 2px;
+    padding: 10px 10px;
+    display: inline-flex;
+    background-color: #2d3342;
+    border-radius: 15px;
+}
+.mayday2{
+    justify-content: center;
+    margin: -15px 5px;
+    padding: 0px 0;
+    display: inline-flex;
+}
+.mayday3{
+    justify-content: center;
+    margin: -15px 5px;
+    padding: 0px 0;
+    display: inline-flex;
+    font-family: "Rubik Regular";
+
+    color: white;
+}
+
+
+
+.nav__buttons2{
+    padding: 9px 5px;
+    border-radius: 5px;
+    font-size: 15px;
+    background-color: #272d39;
+    transition: 0.4s;
+    cursor: pointer;
+    moz-user-select: none; -khtml-user-select: none; user-select: none;
+}
+.nav__buttons2:hover{
+    transition: 0.4s;
+    background: #2f3644;
+}
+.nav__buttons3_auth{
+    padding: 9px 17px;
+    font-family: "Rubik Regular";
+    border-radius: 5px;
+    font-size: 15px;
+    color: rgba(116, 129, 152, 0.15);
+    border: 1px solid rgba(116, 129, 152, 0.15);
+
+    transition: 0.4s;
+    cursor: pointer;
+    moz-user-select: none; -khtml-user-select: none; user-select: none;
+}
+.nav__buttons3_auth:hover{
+    transition: 0.4s;
+    opacity: 0.7;
+
+}
+
+.nav__buttons3{
+    padding: 9px 17px;
+    border-radius: 5px;
+    font-size: 15px;
+    background-color:  #c54fff;
+
+    transition: 0.4s;
+    cursor: pointer;
+    moz-user-select: none; -khtml-user-select: none; user-select: none;
+
+}
+
+.nav__buttons3:hover{
+    transition: 0.4s;
+    opacity: 0.80;
+}
+
+.nav__buttons4{
+    padding: 1.2px 17px;
+    border-radius: 5px;
+    font-size: 12px;
+    moz-user-select: none; -khtml-user-select: none; user-select: none;
+
+    cursor: pointer;
+}
+.nav__other_hr{
+ background: rgba(116, 129, 152, 0.15);
+    transform: rotate(90deg);
+    width: 42px;
+    margin: -40px -35px;
+}
+.mayday4{
+    justify-content: center;
+    margin: -50px 5px;
+    padding: 0px 0;
+    display: inline-block;
+    font-family: "Rubik Regular";
+    color: white;
+}
+.nav__other_text{
+    color: white;
+    font-family: "Rubik Medium";
+    moz-user-select: none; -khtml-user-select: none; user-select: none;
+    font-size: 18px;
+}
+.main.nav__divtext{
+
+}
+.nav__text_dop{
+    background-color: #c54fff;
+    margin: 0 5px;
+    padding: 0 8px;
+    border-radius: 5px;
+}
+.nav__text_dop1{
+    background-color: #c54fff;
+    margin: 0 5px;
+    padding: 0 8px;
+    border-radius: 5px;
+    font-family: "Rubik Regular";
+
+}
+.nav__text_dop1_img{
+    width: 10px;
+    height: 10px;
+    font-size: 30px;
+
+    filter: brightness(0) invert(1);
+}
+
+.main{
+
+}
+.text{
+
+    text-align: center;
+    font-family: "Roboto";
+
+    color: #fefefe;
+    font-size: 30px;
+}
+
+.gui__wrapper{
+    float: left;
+
+    max-width: 200px;
+    padding: 0 10px;
+
+}
+.gui__container{
+    position: fixed;
+    z-index: 99;
+    display: inline-block;
+
+    bottom: 0;
+    top: 80px;
+    left: 0;
+    right: 50%;
+    height: auto;
+    background: #1c2028;
+    border-radius: 10px;
+    float: left;
+    width: 60px;
+
+
+
+    margin: 20px 18px;
+}
+
+.gui__blocks{
+padding: 15px 22px 1px 22px;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    cursor: pointer;
+}
+.gui__blocks:hover{
+    transition: 0.3s;
+    filter: brightness(0) invert(1);
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+
+
+
+}
+
+
+.gui__blocksd{
+
+    filter: brightness(0) invert(1);
+
+}
+
+.gui__container img{
+    width: 20px;
+    height: 20px;
+
+}
+.gui__container img:hover{
+
+
+}

@@ -1,0 +1,727 @@
+@font-face {
+    font-family: 'Rubik Light';
+    src: local('Rubik Light'), local('Rubik-Light'), url('./fonts/Rubiklight.woff2') format('woff2'), url('./fonts/Rubiklight.woff') format('woff'), url('./fonts/Rubiklight.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Rubik Light Italic';
+    src: local('Rubik Light Italic'), local('Rubik-LightItalic'), url('./fonts/Rubiklightitalic.woff2') format('woff2'), url('./fonts/Rubiklightitalic.woff') format('woff'), url('./fonts/Rubiklightitalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Rubik Regular';
+    src: local('Rubik'), local('Rubik-Regular'), url('./fonts/Rubik.woff2') format('woff2'), url('./fonts/Rubik.woff') format('woff'), url('./fonts/Rubik.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Rubik Regular Italic';
+    src: local('./fonts/Rubik Italic'), local('Rubik-Italic'), url('./fonts/Rubikitalic.woff2') format('woff2'), url('./fonts/Rubikitalic.woff') format('woff'), url('./fonts/Rubikitalic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Rubik Medium';
+    src: local('Rubik Medium'), local('Rubik-Medium'), url('./fonts/Rubikmedium.woff2') format('woff2'), url('./fonts/Rubikmedium.woff') format('woff'), url('./fonts/Rubikmedium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Rubik Medium Italic';
+    src: local('Rubik Medium Italic'), local('Rubik-MediumItalic'), url('./fonts/Rubikmediumitalic.woff2') format('woff2'), url('./fonts/Rubikmediumitalic.woff') format('woff'), url('./fonts/Rubikmediumitalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Rubik Bold';
+    src: local('Rubik Bold'), local('Rubik-Bold'), url('./fonts/Rubikbold.woff2') format('woff2'), url('./fonts/Rubikbold.woff') format('woff'), url('./fonts/Rubikbold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Rubik Bold Italic';
+    src: local('Rubik Bold Italic'), local('Rubik-BoldItalic'), url('./fonts/Rubikbolditalic.woff2') format('woff2'), url('./fonts/Rubikbolditalic.woff') format('woff'), url('./fonts/Rubikbolditalic.ttf') format('truetype');
+    font-weight: 700;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Rubik Black';
+    src: local('Rubik Black'), local('Rubik-Black'), url('./fonts/Rubikblack.woff2') format('woff2'), url('./fonts/Rubikblack.woff') format('woff'), url('./fonts/Rubikblack.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Rubik Black Italic';
+    src: local('Rubik Black Italic'), local('Rubik-BlackItalic'), url('./fonts/Rubikblackitalic.woff2') format('woff2'), url('./fonts/Rubikblackitalic.woff') format('woff'), url('./fonts/Rubikblackitalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+.games__wrapper{
+
+
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    
+
+    justify-content: center;
+
+
+}
+.games__container{
+    width: 100%;
+    max-width: 990px;
+    height: auto;
+    margin: 0px 110px;
+    padding: 0 40px;
+
+}
+.circle:before {
+    content: ' \25CF';
+    font-size: 20px;
+    color: #c54fff;
+    display: inline;
+    padding:  0 0px;
+}
+.registr{
+    padding: 30px 0px;
+
+}
+.registr p{
+    color: #9ca3b2;
+
+    font-family: "Rubik Regular";
+    font-size: 14.5px;
+}
+.registr img{
+    width: 20px;
+    height: 20px;
+}
+.registr_a{
+    color: #084109;
+    border-radius: 5px;
+
+    background-color: #18bb19;
+    margin: 10px 0;
+    padding: 15px 20px;
+    moz-user-select: none; -khtml-user-select: none; user-select: none;
+    transition: 0.4s;
+    font-size: 14px;
+    font-family: "Rubik Medium";
+}
+.registr_a:hover{
+    transition: 0.4s;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.circle2:before {
+    content: ' \25CF';
+    font-size: 20px;
+    color: #2cc03a;
+    display: inline;
+    padding:  0 0px;
+}
+.games__block{
+    width:  1820px;
+    max-width: 100%;
+    cursor: pointer;
+
+    height: 138px;
+    margin: 80px 10px 20px 0px;
+    border: 1px solid rgba(116, 129, 152, 0.15);
+    border-radius: 5px;
+    background-image: url("./images/vip-image.cfccc7d6.png");
+    background-size: 750px 400px;
+    background-position: center;
+    padding: 20px 44px;
+
+}
+.games__block2{
+    width:  1820px;
+    max-width: 100%;
+    font-size: 20px;
+
+    margin: 80px 10px 20px 0px;
+
+    float: left;
+}
+.games__block2_img{
+    width: 25px;
+    height: 25px;
+}
+.games__block2 h1{
+    color: white;
+    font-size: 30px;
+    font-family: "Rubik Medium";
+}
+.games__block2 p{
+    color: #9ca3b2;
+    margin: -3.5px 0px;
+    font-size: 19px;
+    font-family: "Rubik Regular";
+}
+.games__players{
+    display: inline-block;
+}
+.games__players2{
+    display: inline-block;
+    padding: 0 100px;
+}
+
+.games__games1{
+    width: 215px;
+
+    height: 225px;
+    margin: 15px 0;
+    max-width: 511px;
+    max-height: 511px;
+    display: inline-block;
+    padding: 15px 15px;
+    transition: 0.2s;
+    background-image: url("./images/mines.png");
+    background-size: 220px 230px;
+
+    border-radius: 10px;
+
+
+}
+
+.games__games2{
+    width: 215px;
+
+    height: 225px;
+    margin: 15px 13.5px;
+    max-width: 511px;
+    max-height: 511px;
+    display: inline-block;
+    padding: 15px 15px;
+    transition: 0.2s;
+    background-image: url("./images/diceActive.png");
+    background-size: 220px 230px;
+
+    border-radius: 10px;
+
+
+}
+.games__games3{
+    width: 215px;
+        margin: 15px 0px;
+    height: 225px;
+
+    max-width: 511px;
+    max-height: 511px;
+    display: inline-block;
+    transition: 0.2s;
+
+    background-image: url("./images/coinflipActive.png");
+    background-size: 220px 230px;
+
+    border-radius: 10px;
+
+
+}
+
+
+
+.games__games4{
+    width: 215px;
+
+    height: 225px;
+    margin: 15px 13.5px;
+    max-width: 511px;
+    max-height: 511px;
+    display: inline-block;
+    padding: 15px 15px;
+    transition: 0.2s;
+    background-image: url("./images/mines.png");
+    background-size: 220px 230px;
+
+    border-radius: 10px;
+
+
+}
+.games__games5{
+    width: 215px;
+    margin: 5px 0px;
+    height: 225px;
+
+    max-width: 511px;
+    max-height: 511px;
+    display: inline-block;
+    padding: 15px 15px;
+    transition: 0.2s;
+    background-image: url("./images/mines.png");
+    background-size: 220px 230px;
+
+    border-radius: 10px;
+
+
+}
+.games__games1:hover{
+    margin: 8px 0px;
+    cursor: pointer;
+    transition: 0.2s;
+    background-image:  url('./images/mineActive.jpg');
+    background-size: 220px 230px;
+    border-radius: 10px;
+}
+.games__games2:hover{
+    margin: 8px 13.5px;
+    cursor: pointer;
+    transition: 0.2s;
+    background-image:  url('images/diceActive.jpg');
+    background-size: 220px 230px;
+    border-radius: 10px;
+}
+
+.games__games3:hover{
+    margin: 8px 0px;
+    cursor: pointer;
+    transition: 0.2s;
+    background-image:  url('./images/coinflipActivee.jpg');
+    background-size: 220px 230px;
+    border-radius: 10px;
+}
+.games__games_img2{
+    width: 15px;
+    height: 15px;
+    margin: 0 6px;
+    filter: brightness(0) invert(1);
+
+}
+.into__text{
+
+    padding: 40px 0 0 0px;
+    margin: 0 -50px;
+
+    font-family: "Rubik Medium";
+    font-size: 17.5px;
+    color: white;
+}
+.games__boxes {
+margin: 0 -50px;
+}
+.games__games_img{
+    width: 100%;
+
+
+    height: 100%;
+
+    border-radius: 10px;
+}
+.games__block:hover{
+    transition: 0.3s;
+
+
+
+
+}
+.games__block_text{
+    font-family: "Rubik Regular";
+    color: white;
+
+
+    font-size: 17.4px;
+    moz-user-select: none; -khtml-user-select: none; user-select: none;
+}
+.games__block_img{
+    width: 16px;
+    height: 23px;
+    margin: 0 5px;
+}
+.games__block_about{
+    font-family: "Rubik Regular";
+    color: grey;
+
+    font-size: 14px;
+    margin: 0 5px;
+    moz-user-select: none; -khtml-user-select: none; user-select: none;
+}
+.games__block_rang{
+    font-family: "Rubik Regular";
+    color: white;
+    background-color: #1c2028;
+    font-family: "Rubik Regular";
+    font-size: 11.3px;
+    border-radius: 10px;
+    width: 254px;
+
+    padding: 0 10px 0px 15px;
+
+    margin: 10px 5px;
+    moz-user-select: none; -khtml-user-select: none; user-select: none;
+}
+.table{
+
+    max-width: 910px;
+    padding: 17px 22px;
+    max-block-size: 100%;
+    color: rgb(90,103,122);
+    cursor: default;
+    border-radius: 5px;
+
+    display: block;
+
+    background: #262b37;
+
+}
+.table img{
+    width: 20px;
+    height: 20px;
+}
+.table p{
+    font-size: 15px;
+    font-family: "Rubik Medium";
+}
+.game{
+    font-family: "Rubik Regular";
+    font-size: 13.5px;
+    color: white;
+}
+
+.table th{
+    font-size: 12.4px;
+    font-family: "Rubik Regular";
+
+
+}
+.hr1{
+    background-color: #303643;
+    width: 503%;
+}
+table{
+    width: 110%;
+
+
+
+
+}
+.activeButton{
+    color: white;
+    font-size: 14px;
+    font-family: "Rubik Regular";
+
+    display: inline;
+    position: relative;
+    float: right;
+    padding: 7px 0px;
+    cursor: pointer;
+
+}
+.activeButton:after{
+    content: '';
+    position: absolute;
+
+    bottom: -9px;
+    left: 1px;
+    width: 74px;
+    border:  #c54fff 0.1px solid;
+}
+td{
+
+}
+.paldron{
+    display: inline-block;
+    align-items: center;
+    text-align: center;
+    padding: 10px 10px;
+    height: 60px;
+
+    max-width: 190px;
+    cursor: default;
+    width: 200px;
+    margin: 20px 11px;
+    border: 1px solid rgba(116, 129, 152, 0.15);
+    border-radius: 5px;
+
+}
+.paldron p{
+    font-size: 13px;
+
+    margin: 1px 0;
+}
+.paldron_text{
+    color: #acb3c3;
+    font-family: "Rubik Regular";
+}
+.paldron_description{
+    font-family: "Rubik Regular";
+    color: #2cc03a;
+
+}
+.target{
+    margin: -30px 50px;
+}
+
+.hr{
+    background-color: rgba(116, 129, 152, 0.15);
+    width: 100%;
+}
+.nickname{
+    color: rgb(125,138,152);
+    font-size: 14px;
+    font-family: "Rubik Medium";
+}
+.time{
+    color: white;
+    font-size: 14px;
+    font-family: "Rubik Medium";
+}
+.stavka{
+    color: white;
+    font-size: 14px;
+    font-family: "Rubik Medium";
+}
+.koef{
+    color: white;
+    font-size: 13px;
+    font-family: "Rubik Medium";
+}
+.games__players p{
+    color: #9ca3b2;
+    font-family: "Rubik Regular";
+    font-size: 14px;
+
+
+    display: inline;
+}
+.games__players h4{
+    color: white;
+}
+.games__players2 p{
+    color: #9ca3b2;
+    font-family: "Rubik Regular";
+    font-size: 14px;
+
+
+    display: inline;
+}
+.modal_container{
+padding: 0;
+    margin: 0;
+}
+.modal_container__input{
+
+    background: #222731;
+    height: 48px;
+    margin: 9px 26px;
+    border: none;
+    padding: 10px 15px;
+    border: 1px solid rgb(0, 0, 0, 0);
+    color: white;
+    border-radius: 5px;
+    width: 280px;
+    font-family: "Rubik Regular";
+    font-size: 14.5px;
+
+    outline: none;
+
+}
+.hr3{
+    background-color: #343b48;
+    width: 49%;
+    margin: 37px 285px;
+}
+.hr4{
+    background-color: #343b48;
+    width: 49%;
+    margin: 335px 285px;
+}
+.modal_container_a{
+
+    padding: 15px 117px;
+    font-family: "Rubik Regular";
+    cursor: pointer;
+    font-size: 15px;
+    color: white;
+    border-radius: 5px;
+    background-color:  #c54fff;
+
+}
+.modal_container_a1{
+
+    padding: 15px 63px;
+    font-family: "Rubik Regular";
+    cursor: pointer;
+    font-size: 15px;
+    color: white;
+    border-radius: 5px;
+    background-color:  #c54fff;
+
+}
+.modal_container_a:hover{
+    transition: 0.3s;
+    background-color: #a341d3;
+}
+.modal_container_a1:hover{
+    transition: 0.3s;
+    background-color: #a341d3;
+}
+.podrob{
+    font-size: 11px;
+    font-family: "Rubik Regular";
+    color: #828f9a;
+    margin: 210px 10px;
+    float: right;
+    text-align: center;
+}
+.podrob_desc{
+color: #c54fff;
+}
+.podrob_desc:hover{
+    color: #d683ff;
+
+}
+.modal__button{
+    margin: -240px 284px;
+}
+.modal__button1{
+    margin: -240px 284px;
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #4e5a61;
+    opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #4e5a61;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: #4e5a61;
+}
+.modal_container__input:focus{
+    border: 1.5px solid #535d71;
+}
+.inputes{
+    margin: -35px 256px;
+    height: 100%;
+
+}
+.modal_container p{
+    color: #828f9a;
+    font-family: "Rubik Regular";
+
+    float: right;
+    font-size: 15px;
+    margin: 0 36.5px;
+    border-bottom: 1.3px solid rgb(0, 0, 0, 0);
+    height: 38px;
+    cursor: pointer;
+}
+/*.modal_container p:active{*/
+/*    color: white;*/
+/*    border-bottom: 1.3px solid #c54fff;*/
+/*    height: 38px;*/
+
+
+.password__unknown p{
+    color: #828f9a;
+    cursor: pointer;
+    text-align: center;
+    font-family: "Rubik Regular";
+    margin: -323px 350px;
+}
+
+/*}*/
+
+.error{
+    width: auto;
+    height: 54px;
+    background-color: white;
+    border-radius: 5px;
+    z-index: 1000;
+    margin: -1368px 292px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    position: fixed;
+    box-shadow: 1px 1px 7px 1px white;
+
+
+}
+.error1{
+    width: auto;
+    height: 54px;
+    background-color: white;
+    border-radius: 5px;
+    z-index: 1000;
+    margin: 5px 792px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    position: fixed;
+    box-shadow: 1px 1px 7px 1px white;
+
+
+}
+.error1 h3{
+    color: #616161;
+
+    font-size: 16px;
+    margin: -46px 55px;
+    font-family: "Rubik Regular";
+
+
+}
+.error1 p{
+    margin: 47px 55px;
+    font-size: 12px;
+    color: #a2a2a2;
+    font-family: "Rubik Regular";
+}
+.error img{
+    width: 25px;
+    height: 25px;
+    margin: 15px 15px;
+    align-items: center;
+
+}
+.error1 img{
+    width: 25px;
+    height: 25px;
+    margin: 15px 15px;
+    align-items: center;
+
+}
+.error h3{
+    color: #616161;
+
+    font-size: 16px;
+    margin: -46px 55px;
+    font-family: "Rubik Regular";
+}
+.error p{
+    margin: 47px 55px;
+    font-size: 12px;
+    color: #a2a2a2;
+    font-family: "Rubik Regular";
+}
+.modal_container p:after{
+    border-bottom: 1px solid red;
+    margin: 20px 0px;
+
+}
+.modal_container img{
+    float: left;
+    -moz-border-radius-bottomleft: 35px;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    margin: -20px -21.5px;
+    width: 280px;
+    height: 430px;
+}
+.games__players2 h4{
+    color: white;
+}
+.win{
+    color: #2cc03a;
+    font-family: "Rubik Medium";
+    font-size: 14.4px;
+}
